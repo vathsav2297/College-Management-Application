@@ -1,0 +1,563 @@
+/*
+Srivathsava Bathini - 1001948962
+Anumandla Sanjay - 10011963172
+Ajay kumar reddy Suram - 10011963172
+*/
+
+
+.course-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.course-table td, .course-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.course-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.course-table tr:hover {background-color: #ddd;}
+
+.course-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #b4baa6;
+  color: black;
+}
+
+.main-container {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 250px;
+  margin-right: 50px;
+}
+
+input {
+    /* padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 100px; */
+    border: 0;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    width: 60%;
+    background: #b4baa6;
+    font-family: 'Roboto', sans-serif;
+    margin-left: unset !important;
+  }
+
+.col {
+  float: left;
+  width: 49%;
+}
+
+.sub-data {
+  font-size: 12px;
+}
+
+textarea {
+  border: 0;
+    padding: 10px;
+    border-radius: 8px;
+    width: 50%;
+    background: #f1f1f1;
+    height: 170px;
+    text-align: center;
+    margin: 1% 25% !important;
+}
+
+/* DASHBOARD */
+.card {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+  background-color: #e85a4f;
+  height: 40%;
+  text-align: center;
+}
+
+.grid-container {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 1px;
+  grid-row-gap: 50px;
+
+}
+
+.course-card-ul {
+list-style-type: none;
+text-decoration: none;
+}
+
+/* WEEK COLOURS */
+.monday {background:#ffd9d9;}
+.tuesday {background:#fff1d6;}
+.wednesday {background:#d3e6ff;}
+.thursday {background: #daffe5;}
+.friday {background:#d3e6ff;}
+.saturday {background:#daffe5;}
+.sunday {background:#ffd9d9;}
+
+/* ANNOUNCEMENTS */
+.post-announcement {
+     color: white;
+     background: slategray;;
+     cursor: pointer;
+     margin: 1% 25% !important;
+     width: 50%;
+   }
+
+   #class-announcement{
+    padding: 8px 10px;
+    border-radius: 8px;
+   }
+.make-announcement {
+  width: 100%;
+  text-align: center;
+}
+
+/* SIDE NAVIGATION BAR */
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.side-navigation-menu {
+  list-style-type: none;
+  text-decoration: none;
+  line-height:50px;
+  padding-top: 10%;
+  padding-left: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+aside {
+  font-family: 'Montserrat', sans-serif;
+  position:fixed;
+	float:left;
+	width:220px;
+  background-color: antiquewhite;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /*border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;*/
+}
+
+.profile-header {
+  text-align: center;
+  font-size: 14px;
+}
+
+.side-nav-hr{
+  border-top: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* MANAGE PROFILE FORM */
+.manage-profile-form input {
+  border: 0;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  width: 60%;
+  background: #eae7dc;
+  font-family: 'Roboto', sans-serif;
+}
+
+#manage-profile-submit {
+  border: 1px solid black;
+  width: 20%;
+}
+
+.form-text {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.save-changes {
+  background: #e85a4f;
+}
+
+/*  DASHBOARD CARD */
+.dashboard-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+}
+
+.this-week {
+  margin-top: 0;
+}
+
+.flip-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 12rem;
+  perspective: 1000px;
+}
+
+.flip-card-text{
+  padding: 17% 0;
+  font-size: x-large;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 87%;
+  height: 80%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow:10px 10px 10px 0 rgb(0 0 0 / 20%);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #b4baa6;
+  color: black;
+  border-radius: 6px;
+}
+
+.flip-card-back {
+  background-color: slategray;
+  color: white;
+  border-radius: 6px;
+  transform: rotateY(180deg);
+}
+
+
+.week-card {
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 200px;
+  height: 125px;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+.week-card-body {
+  font-size: 12px;
+}
+
+/*Bar Graph*/
+.barcontainer {
+  position: relative;
+  border: 3px solid black;
+  border-radius: 5px 5px 0 0;
+  width: 50%;
+  margin: 0 auto;
+  min-height: 15vw;
+  max-height: 50vw;
+  min-width: 10%;
+  max-width: 50%;
+  z-index: 1;
+  float: left;
+  /* width: 31%; */
+  margin-top: 10%;
+  margin-left: 25%;
+  margin-bottom: 8%;
+}
+
+.barcontainerheader {
+  display: inline;
+  position: absolute;
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background: slategray;
+  border-bottom: 3px solid black;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 0 black;
+  z-index: 0;
+}
+
+.bar {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  border: 1px solid black;
+  border-radius: 6px 6px 0 0;
+  background: slategray;
+  width: 17%;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  box-shadow: 4px 0 8px #888;
+}
+
+.barlabel {
+  position: absolute;
+  border-top: 2px solid black;
+  background: #888;
+  bottom: 0;
+  width: 100%;
+  text-shadow: 1px 1px 0px black;
+  color: white;
+}
+
+.bar:nth-child(2) {
+  left: 2%;
+}
+
+.bar:nth-child(3) {
+  left: 28%;
+}
+
+.bar:nth-child(4) {
+  left: 54%;
+}
+
+.bar:nth-child(5) {
+  left: 80%;
+}
+
+/* GENERATE REPORT */
+.report-button {
+  padding: 3px 7px;
+    margin-left: 85%;
+    background: slategray;
+    border-radius: 5px;
+    color: white;
+}
+
+/* OVERLAY BOX */
+#overlay {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 10px;
+  padding-top: 30px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+.overlay-box {
+  background-color:lightgrey;
+  position: fixed;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 250px;
+  border: 1px solid #888;
+  width: 60%;
+  height: 90%;
+}
+
+/* TABLE STYLES */
+table {
+  font-family: 'Roboto', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 5px;
+  border: 1px solid black;
+}
+
+caption {
+  font-weight: bold;
+}
+
+td, th {
+  padding: 10px;
+  font-size: 14px;
+}
+
+tr:nth-child(even) {
+  background-color: #fcd3cf;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: lightskyblue;
+  color: black;
+}
+
+caption {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.table-hr {
+  width: 100%;
+}
+
+/* STUDENT*/
+.upcoming-events {
+  margin-bottom: 5%;
+}
+
+.search-class {
+  width: 80%;
+}
+
+.classmates {
+  margin-bottom: 5%;
+  margin-top: 30px;
+}
+
+.upcoming-sub {
+  margin-bottom: 50px;
+}
+
+.announcement {
+  padding: 5px;
+  padding-left: 35px;
+  margin: 30px 10px;
+  box-shadow:0 2px 5px rgba(0,0,0,.3);
+  color: #FFF;
+  width: 85%;
+  border-radius: 15px;
+  line-height: 50%;
+}
+
+.announcement-period {
+  margin-top: 20px;
+  margin-left: 350px;
+}
+
+.damt{background: #8898a0;}
+.wdm{background: #c6ae91;}
+.daa{background: #997b59;}
+.dbms{background: #aec0bf;}
+
+.more-detail-content {
+  text-align: center;
+}
+
+#more-details-overlay {
+  width: 40%;
+  height: 40%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+
+/* PROFESSOR */
+.prof-student-overlay button {
+  background: slategray;
+  margin-left: 20px;
+  color:white;
+}
+
+.prof-student-overlay input {
+  width: 40%;
+}
+
+#prof-overlay {
+  height: 80%;
+  width: 30%;
+}
+
+.post-deadline{
+  border: 0;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  width: 60%;
+  background: #b4baa6;
+  font-family: 'Roboto', sans-serif;
+  margin-left: unset !important;
+}
+
+.post {
+    order: 0;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 8px;
+    width: 38%;
+    background: #b4baa6;
+    font-family: 'Roboto', sans-serif;
+    margin-left: unset !important;
+}
+
+/* ADVISOR */
+.insight-card {
+  background: #f2968f;
+}
+
+.upcoming-hr {
+  margin-top: 5%;
+}
+
+/* ADMIN */
+.add-row {
+  float: right;
+    margin-top: 8px;
+    background: black;
+    color: white;
+    width: 11%;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+
+.right-table {
+  width: 49%;
+  float: right;
+}
+
+.right-table-sub {
+  margin-left: 200px;
+}
+
+.update-grade-input {
+  margin-bottom: 20px;
+}
+
+/* RESPONSIVENESS */
+ @media screen and (max-width: 1275px) {
+   .week-grid {
+     grid-gap: 10%;
+   }
+
+   .pie-col {
+     width: 100%;
+   }
+
+  @media screen and (max-width: 1275px) {
+    .week-grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      padding-bottom: 30%;
+      grid-gap: 20px;
+    }
+  }
+ }
+
+ 
